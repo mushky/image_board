@@ -1,1 +1,1 @@
-A wannabe Pinterest application.
+The wannabe Pinterest application.

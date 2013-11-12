@@ -80,4 +80,13 @@ Pinteresting::Application.configure do
 
   # Set to actual host for devise
   config.action_mailer.default_url_options = { :host => 'http://seriouslypinteresting.herokuapp.com/' }
+
+  # This sets images to upload with Amazon S3
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['S3_BUCKET_NAME'],
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID']
+  }
+}
 end

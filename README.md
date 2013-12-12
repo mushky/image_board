@@ -1,1 +1,1 @@
-The wannabe Pinterest application.
+A straight forward image hosting application.
